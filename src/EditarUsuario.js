@@ -38,6 +38,10 @@ function EditarUsuario() {
     .then(res=>{
       
        Swal.fire('Felicidades', 'El usuario se actualizó con éxito')
+       setTimeout(()=>{
+        window.location.href='/'
+    },1500)
+       
     })
     .then(err => {console.log(err)})
    }

@@ -22,6 +22,10 @@ function AgregarUsuario() {
      .then(res=>{
         //alert(res.data)
         Swal.fire('Felicidades', 'El usuario se creó con éxito')
+        setTimeout(()=>{
+          window.location.href='/'
+      },1500)
+        
      })
      .then(err => {console.log(err)})
     }

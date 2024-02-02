@@ -29,7 +29,12 @@ function eliminarusuario(idusuario){
   axios.delete(`/api/usuario/borrarusuario/${idusuario}`)
   .then(res=>{
      //alert(res.data)
+   
+
      Swal.fire('Felicidades', 'El usuario se eliminó con éxito')
+     setTimeout(()=>{
+      window.location.href='/'
+  },1500)
   })
   .then(err => {console.log(err)})
  }
